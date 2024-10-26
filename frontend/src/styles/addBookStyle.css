@@ -1,0 +1,59 @@
+.addbook-container {
+    width: 400px; /* Fixed width for the Add Book box */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    margin: 100px auto; /* Centering the box vertically and horizontally */
+    animation: slideIn 0.5s ease-out;
+  }
+
+  @keyframes slideIn {
+    0% {
+        transform: translateY(-50px); /* Slide in from above */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at the center */
+        opacity: 1; /* Fade in */
+    }
+  }
+  
+  .addbook-title {
+    font-size: 2rem;
+    color: #6439FF; /* Title color matching your design theme */
+    margin-bottom: 30px;
+    margin-left: 45px;
+  }
+  
+  .form-label {
+    color: #333; /* Consistent label color */
+    margin-bottom: 5px; /* Add spacing between the label and input */
+  }
+  
+  .form-control {
+    margin-bottom: 20px; /* Spacing between fields */
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #4F75FF; /* Border color to match your theme */
+    border-radius: 5px; /* Rounded input fields */
+  }
+  
+  .form-text {
+    font-size: 0.9rem;
+    color: #666; /* Subtle text color for instructions */
+  }
+  
+  .addbook-button {
+    background-color: #6439FF; /* Match your theme */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .addbook-button:hover {
+    background-color: #4F75FF; /* Darker shade on hover */
+  }

@@ -1,0 +1,61 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 60%; /* Define a width to make it box-like */
+  margin: 100px auto; /* Centering the box vertically and horizontally */
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.7); /* Light background with low opacity */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for a box effect */
+  text-align: center; /* Center text inside the container */
+  animation: slideIn 0.5s ease-out;
+  z-index: 1;
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateY(-50px); /* Slide in from above */
+      opacity: 0; /* Start invisible */
+  }
+  100% {
+      transform: translateY(0); /* End at the center */
+      opacity: 1; /* Fade in */
+  }
+}
+
+.welcome-title {
+  font-size: 3rem;
+  color: #6439FF;
+  margin-bottom: 20px;
+  margin-right: 515px;
+}
+
+.welcome-subtitle {
+  font-size: 1.5rem;
+  color: #4F75FF;
+  margin-bottom: 20px;
+}
+
+.welcome-instruction {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.login-button {
+  background-color: #6439FF;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #4F75FF;
+}

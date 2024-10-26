@@ -1,0 +1,70 @@
+.book-card {
+    width: 250px; /* Fixed width for uniformity */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clip the image */
+    background-color: #705b5b; /* Light background for the card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+    margin: 15px; /* Space between cards */
+    margin-left: 25px;
+    animation: slideIn 0.5s ease-out;
+  }
+
+  @keyframes slideIn {
+    0% {
+        transform: translateY(-50px); /* Slide in from above */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at the center */
+        opacity: 1; /* Fade in */
+    }
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+  }
+  
+  .cover-image {
+    width: 100%; /* Make image take full width of the card */
+    object-fit: cover; /* Cover with aspect ratio */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4F75FF; /* Bottom border to separate the image from the text */
+  }
+  
+  .card-body {
+    padding: 15px; /* Padding inside the card */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Larger title */
+    margin-bottom: 10px; /* Space below title */
+    color: #ff3700; /* Dark brown for title */
+  }
+  
+  .card-author {
+    font-size: 1rem; /* Author size */
+    color: #86780a; /* Medium brown for author */
+    margin: 5px 0; /* Space around author */
+  }
+  
+  .card-text {
+    font-size: 0.9rem; /* Smaller text for details */
+    color: #8c6b54; /* Light brown for details */
+  }
+  
+  .btn {
+    background-color: #4F75FF; /* Button color */
+    color: white; /* Button text color */
+    transition: background-color 0.3s; /* Smooth color transition */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button corners */
+    padding: 10px 15px; /* Button padding */
+  }
+  
+  .btn:hover {
+    background-color: #00CCDD; /* Change button color on hover */
+  }
+  

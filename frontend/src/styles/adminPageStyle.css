@@ -1,0 +1,51 @@
+
+/* General Page Styles */
+.admin-page {
+    padding: 20px;
+    min-height: 100vh; /* Ensure the page takes at least full viewport height */
+}
+
+/* Headings */
+h1 {
+    color: #ffffff; /* Darker text color for better contrast */
+    font-size: 2.5rem; /* Larger font size for the main heading */
+    margin-bottom: 20px; /* Space below the heading */
+    margin-left: 525px;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px; /* Add some spacing above the subheading */
+    font-size: 1.75rem; /* Slightly larger font for subheading */
+    margin-left: 25px;
+    color: #ffffff; /* Medium gray color */
+}
+
+/* Books List Styles */
+.books-list {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to next line */
+    gap: 10px; /* Space between cards */
+    margin-top: 20px; /* Space above the books list */
+}
+
+/* Card Styles (if you want to customize BookCard as well) */
+.book-card {
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff; /* White background for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth scale on hover */
+}
+
+.book-card:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Image Styles */
+.cover-image {
+    width: 100%; /* Make the cover image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 8px; /* Rounded corners for top left */
+    border-top-right-radius: 8px; /* Rounded corners for top right */
+}
